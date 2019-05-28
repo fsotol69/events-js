@@ -1,0 +1,56 @@
+html,
+body,
+div,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#ejercicio1,
+#ejercicio2,
+#ejercicio3,
+#ejercicio4,
+#ejercicio5 {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+#ejercicio1 div > div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  display: inline-block;
+  border-radius: 50px;
+}
+#ejercicio1 .target {
+  background-color: red;
+}
+
+#ejercicio2 div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+#ejercicio2 .white {
+  background-color: white;
+}
+#ejercicio2 .red {
+  background-color: red;
+}
+#ejercicio2 .yellow {
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */
