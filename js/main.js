@@ -1,37 +1,16 @@
-// Exercise 1 variables
-let intervalExecise1;
-let candidateCircle;
-let arrayCircles = [];
-let container_ex1 = document.getElementById('ejercicio1');
-
 let ejercicio1 = () => {
-  console.log('ejercicio 1 en ejecución');
-
-  // Creating Circles
-  if (container_ex1.childNodes.length < 2) {
-    container_ex1.style.backgroundColor = 'inherit';
-    container_ex1.style.width = '310px';
-    container_ex1.style.height = '310px';
-    container_ex1.innerHTML = '';
-    for (let i = 0; i < 3; i++) {
-      let contentDiv = document.createElement('DIV');
-      for (let j = 1; j <= 3; j++) {
-        let circleDiv = document.createElement('DIV');
-        circleDiv.id = '' + (i * 3 + j);
-        circleDiv.style.visibility = 'hidden';
-        circleDiv.addEventListener('click', () => {
-          stopInterval_1();
-          alert('Has ganado !!');
-        });
-        contentDiv.appendChild(circleDiv);
-        arrayCircles.push(circleDiv);
-      }
-      container_ex1.appendChild(contentDiv);
-    }
-    initInterval_1();
+  let container = document.getElementById('ejercicio1');
+  if (container.children.length < 1) {
+    let playGame = new pickAball(container);
+    playGame.createEntities();
+    playGame.play();
   }
 };
 let ejercicio2 = () => {
+  let container = document.getElementById('ejercicio2');
+  if (container.children.length < 1) {
+    let keyEvents = new keyBoardEvents(container);
+  }
   console.log('ejercicio 2 en ejecución');
 };
 let ejercicio3 = () => {
@@ -44,11 +23,11 @@ let ejercicio5 = () => {
   console.log('ejercicio 5 en ejecución');
 };
 
-document.getElementById('ejercicio1').addEventListener('click', ejercicio1);
-document.getElementById('ejercicio2').addEventListener('click', ejercicio2);
-document.getElementById('ejercicio3').addEventListener('click', ejercicio3);
-document.getElementById('ejercicio4').addEventListener('click', ejercicio4);
-document.getElementById('ejercicio5').addEventListener('click', ejercicio5);
+document.getElementById('ex1').addEventListener('click', ejercicio1);
+document.getElementById('ex2').addEventListener('click', ejercicio2);
+document.getElementById('ex3').addEventListener('click', ejercicio3);
+document.getElementById('ex4').addEventListener('click', ejercicio4);
+document.getElementById('ex5').addEventListener('click', ejercicio5);
 
 let playPickABall = () => {
   let index = Math.floor(Math.random() * arrayCircles.length);

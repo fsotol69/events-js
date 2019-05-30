@@ -3,14 +3,10 @@
 body {
   font-family: sans-serif;
 }
-#ejercicio1,
-#ejercicio2,
-#ejercicio3,
-#ejercicio4,
-#ejercicio5 {
-  width: 150px;
+h1 {
+  width: 200px;
   height: 50px;
-  //line-height: 50px;
+  line-height: 50px;
   text-align: center;
   background-color: crimson;
   color: white;
@@ -33,22 +29,22 @@ body {
   }
 }
 
-#ejercicio2{
-    div {
-        width: 100px; 
-        height: 100px;
-        border: 1px solid black;
-      }
-     
-      .white {
-        background-color: white;
-      }
-     
-      .red {
-        background-color: red;
-      }
-     
-      .yellow {
-        background-color: yellow;
-      }
+#ejercicio2 {
+  div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+  }
+
+  .white {
+    background-color: white;
+  }
+
+  .red {
+    background-color: red;
+  }
+
+  .yellow {
+    background-color: yellow;
+  }
 }
