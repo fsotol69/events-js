@@ -14,12 +14,24 @@ let ejercicio2 = () => {
   console.log('ejercicio 2 en ejecución');
 };
 let ejercicio3 = () => {
+  let container = document.getElementById('ejercicio3');
+  if (container.children.length < 1) {
+    let dom_Events = new domEvents(container);
+  }
   console.log('ejercicio 3 en ejecución');
 };
 let ejercicio4 = () => {
+  let container = document.getElementById('ejercicio4');
+  if (container.children.length < 1) {
+    let instancia = new eventsDetection(container);
+  }
   console.log('ejercicio 4 en ejecución');
 };
 let ejercicio5 = () => {
+  let container = document.getElementById('ejercicio5');
+  if (container.children.length < 1) {
+    let instancia = new webApisEventDetection(container);
+  }
   console.log('ejercicio 5 en ejecución');
 };
 
